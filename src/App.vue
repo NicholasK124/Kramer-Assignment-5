@@ -57,7 +57,9 @@ loadAnimals();
 // ------------------------------------
 
 // TODO 3: Write toggleAdoption(animal).
-
+function toggleAdoption(animal) {
+  animal.adopted = !animal.adopted;
+}
 // ------------------------------------
 // Filter, Sort, and Count
 // ------------------------------------
@@ -93,10 +95,8 @@ loadAnimals();
             v-for="animal in animals"
             :key="animal.id"
             :animal="animal"
+            @toggle="toggleAdoption(animal)"
           />
-          <p v-for="animal in animals" :key="animal.id">
-            {{ animal.name }}
-          </p>
         </div>
       </div>
     </section>

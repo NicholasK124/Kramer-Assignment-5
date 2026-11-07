@@ -12,6 +12,14 @@ function arrivalText(intakeDate) {
 }
 
 // TODO 3: Declare the toggle event with defineEmits().
+/**
+ * ---------------------------Required Comment------------------------------
+ * In this component, we define a prop called `animal` using `defineProps()`,
+ * which allows us to pass an animal object from the parent component.
+ * We also define a function called `arrivalText()` that takes an intake date
+ * and returns a formatted string indicating when the animal arrived and how many days ago that was.
+ */
+const emit = defineEmits(["toggle"]);
 </script>
 
 <template>
@@ -22,7 +30,7 @@ function arrivalText(intakeDate) {
     <p>{{ animal.species }}, {{ animal.age }} years old</p>
     <p>{{ arrivalText(animal.intakeDate) }}</p>
     <p>{{ animal.adopted ? "Adopted" : "Available" }}</p>
-    <button type="button">
+    <button type="button" @click="emit('toggle')">
       {{ animal.adopted ? "Return" : "Adopt" }}
     </button>
   </article>
