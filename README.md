@@ -1,5 +1,25 @@
 # Assignment 5 — Vue Components and Events
 
+# TODO 5 Explaining the Project
+
+1. **How to run it.** The commands someone needs after cloning your repository, in order. **Start by running `npm install` and then `npm run dev` in the terminal for the files path. After that it is pretty simple as the buttons features should hopefully be working as they're supposed to.**
+2. **Component map.** For each of the three components, write:
+   - what it is responsible for, in one sentence;
+   - the props it receives, if any, and where they come from;
+   - the events it emits, if any, and which component listens for them.
+     **The Adopt and Return buttons when working indicate that an animal is adopted or available on their animal card**
+     **The filter and sort buttons when working properly should filter out all, available, or adopted animals so the user can see which animals are adoptable or not.**
+     **When a button is clicked then either the animal card or the animal count is updated and/or filtered on the page**
+3. **Trace a click.** Describe, step by step, everything that happens when the
+   user clicks **Adopt** on Luna, from the click until the card and the count
+   change on the page. Name the component, function, event, and data involved
+   at each step.
+   **On the page Luna's adoption status would be changed from whatever it was before.**
+4. **Compare with Assignment 4.** In a few sentences: in Assignment 4, every
+   change ended with a call to `updateDisplay()`. Where did that work go in
+   Vue? What does Vue do for you now, and what do you still have to decide
+   yourself? **What Vue does now is that it updates the page automattically when the data changes. I still have to decide is what data is changed when a button is clicked.**
+
 You will rebuild the animal adoption board from Assignment 4 in Vue. It will look
 and work exactly the same. What changes is how the code is organized.
 
