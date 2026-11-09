@@ -13,7 +13,7 @@ function arrivalText(intakeDate) {
 
 // TODO 3: Declare the toggle event with defineEmits().
 /**
- * ---------------------------Required Comment------------------------------
+ * --------------------------- Required Comment - TODO 3 ------------------------------
  * In this component, we define a prop called `animal` using `defineProps()`,
  * which allows us to pass an animal object from the parent component.
  * We also define a function called `arrivalText()` that takes an intake date
